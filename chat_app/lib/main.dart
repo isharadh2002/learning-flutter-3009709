@@ -5,24 +5,32 @@ void main() {
 }
 
 class ChatApp extends StatelessWidget {
+  const ChatApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
     return MaterialApp(
         title: "Flutter Chat App",
         theme: ThemeData(primarySwatch: Colors.yellow),
-        home: LoginPage()
+        home: const LoginPage()
     );
   }
 }
 
 class LoginPage extends StatelessWidget {
+  const LoginPage({Key? key}) : super(key: key);
+
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        title: const Text("Chat App"),
         backgroundColor: Colors.blue,
+      ),
+      drawer: const Drawer(
+        backgroundColor: Colors.lightBlueAccent,
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
@@ -31,7 +39,7 @@ class LoginPage extends StatelessWidget {
         backgroundColor: Colors.deepOrange,
 
       ),
-      body: Text("Hello"),
+      body: const Text("Hello"),
     );
   }
 }
