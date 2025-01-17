@@ -6,29 +6,24 @@ class ChatInput extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 100,
+      height: 60,
+      decoration: const BoxDecoration(
+        color: Colors.lightBlueAccent,
+        borderRadius: BorderRadius.only(
+            topLeft: Radius.circular(20), topRight: Radius.circular(20)),
+      ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           IconButton(
-            onPressed: () {},
-            icon: Icon(
-              Icons.add,
-              color: Colors.white,
-            ),
-          ),
+              onPressed: () {},
+              icon: const Icon(Icons.add, color: Colors.black)),
           IconButton(
-            onPressed: () {},
-            icon: Icon(
-              Icons.send,
-              color: Colors.white,
-            ),
-          ),
+              onPressed: () {},
+              icon: const Icon(Icons.send, color: Colors.black)),
         ],
       ),
-      decoration: BoxDecoration(
-          color: Colors.black,
-          borderRadius: BorderRadius.vertical(top: Radius.circular(20))),
     );
   }
 }
