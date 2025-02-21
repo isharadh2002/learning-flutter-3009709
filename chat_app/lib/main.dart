@@ -1,4 +1,5 @@
 import 'package:chat_app/chat_page.dart';
+import 'package:chat_app/fuel_quota_3.dart';
 import 'package:chat_app/login_page.dart';
 import 'package:flutter/material.dart';
 
@@ -10,6 +11,7 @@ class ChatApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: "Chat App",
       theme: ThemeData(
         useMaterial3: true, // Enable Material 3 design
@@ -21,7 +23,14 @@ class ChatApp extends StatelessWidget {
           backgroundColor: Colors.blue,
         ),
       ),
-      home: const ChatPage(),
+      home: const VehicleOwnerPage(
+        ownerName: 'John Doe',
+        ownerEmail: 'james.s.sherman@example-pet-store.com',
+        vehicleModel: 'Toyota Camry',
+        vehicleNumber: 'ABC123',
+        totalQuota: 50.0,
+        initialRemainingQuota: 50.0,
+      ),
     );
   }
 }
