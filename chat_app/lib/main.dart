@@ -35,7 +35,8 @@ class LoginPage extends StatelessWidget {
         onPressed: () {
           print("Button Pressed");
         },
-        backgroundColor: Colors.deepOrange,
+        backgroundColor: Colors.blue,
+        child: const Icon(Icons.add),
       ),
       body: const Text("Hello"),
     );
