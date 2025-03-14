@@ -13,14 +13,13 @@ class ChatApp extends StatelessWidget {
     return MaterialApp(
         title: "Flutter Chat App",
         theme: ThemeData(primarySwatch: Colors.yellow),
-        home: const LoginPage()
-    );
+        themeMode: ThemeMode.system,
+        home: const LoginPage());
   }
 }
 
 class LoginPage extends StatelessWidget {
   const LoginPage({Key? key}) : super(key: key);
-
 
   @override
   Widget build(BuildContext context) {
@@ -37,7 +36,6 @@ class LoginPage extends StatelessWidget {
           print("Button Pressed");
         },
         backgroundColor: Colors.deepOrange,
-
       ),
       body: const Text("Hello"),
     );
