@@ -23,14 +23,7 @@ class ChatApp extends StatelessWidget {
           backgroundColor: Colors.blue,
         ),
       ),
-      home: const VehicleOwnerPage(
-        ownerName: 'John Doe',
-        ownerEmail: 'james.s.sherman@example-pet-store.com',
-        vehicleModel: 'Toyota Camry',
-        vehicleNumber: 'ABC123',
-        totalQuota: 50.0,
-        initialRemainingQuota: 50.0,
-      ),
+      home: const ChatPage(),
     );
   }
 }
