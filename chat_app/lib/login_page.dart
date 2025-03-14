@@ -38,9 +38,9 @@ class LoginPage extends StatelessWidget {
                 width: 250,
               ),
               Container(
-                  child: Image.network(
-                      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSGAtgxs1sGR30Ak9pgzc8Of3Wlm7NTFgTBA&s',
-                  ),
+                child: Image.network(
+                  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSGAtgxs1sGR30Ak9pgzc8Of3Wlm7NTFgTBA&s',
+                ),
                 decoration: BoxDecoration(
                   color: Colors.blue,
                   borderRadius: BorderRadius.circular(25),
