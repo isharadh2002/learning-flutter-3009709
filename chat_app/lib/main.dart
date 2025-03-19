@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'login_page.dart';
+import 'login_page_2.dart';
 
 void main() {
   runApp(ChatApp());
@@ -13,9 +14,21 @@ class ChatApp extends StatelessWidget {
     // TODO: implement build
     return MaterialApp(
         title: "Flutter Chat App",
-        theme: ThemeData(
-            colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue)),
+        debugShowCheckedModeBanner: false,
         themeMode: ThemeMode.system,
-        home: const LoginPage());
+        theme: ThemeData(
+          useMaterial3: true, // Ensure Material 3 is enabled
+          colorScheme: ColorScheme.fromSeed(
+            seedColor: Colors.blue, // Base color for theme
+          ),
+        ),
+        darkTheme: ThemeData(
+          useMaterial3: true,
+          colorScheme: ColorScheme.fromSeed(
+            seedColor: Colors.blue,
+            brightness: Brightness.dark, // Dark theme
+          ),
+        ),
+        home: const LoginPage2());
   }
 }
