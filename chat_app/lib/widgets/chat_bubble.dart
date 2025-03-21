@@ -1,18 +1,22 @@
 import 'package:flutter/material.dart';
 
 class ChatBubble extends StatelessWidget {
-
   final Alignment alignment;
   final String inputMessage;
   final String imageURL;
 
-  const ChatBubble({Key? key, required this.alignment, required this.inputMessage, required this.imageURL}) : super(key: key);
+  const ChatBubble(
+      {Key? key,
+      required this.alignment,
+      required this.inputMessage,
+      required this.imageURL})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     assert(
-    alignment == Alignment.centerLeft || alignment == Alignment.centerRight,
-    'Alignment must be either Alignment.centerLeft or Alignment.centerRight',
+      alignment == Alignment.centerLeft || alignment == Alignment.centerRight,
+      'Alignment must be either Alignment.centerLeft or Alignment.centerRight',
     );
 
     return Align(
@@ -28,9 +32,9 @@ class ChatBubble extends StatelessWidget {
               topLeft: Radius.circular(20),
               topRight: Radius.circular(20),
               bottomLeft:
-              Radius.circular(alignment == Alignment.centerLeft ? 0 : 20),
+                  Radius.circular(alignment == Alignment.centerLeft ? 0 : 20),
               bottomRight:
-              Radius.circular(alignment == Alignment.centerRight ? 0 : 20),
+                  Radius.circular(alignment == Alignment.centerRight ? 0 : 20),
             ),
           ),
           child: Column(
