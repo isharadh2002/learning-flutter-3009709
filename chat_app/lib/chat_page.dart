@@ -33,7 +33,19 @@ class ChatPage extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           Expanded(
-            child: ListView(
+            child: ListView.builder(
+                itemCount: 10,
+                itemBuilder: (context, index) {
+                  return ChatBubble(
+                      alignment: index % 2 == 0
+                          ? Alignment.centerLeft
+                          : Alignment.centerRight,
+                      inputMessage: "Fitgirl Logo",
+                      imageURL:
+                          'https://preview.redd.it/should-i-watch-the-fitgirl-movie-aka-am%C3%A9lie-v0-50erfbfvsdrc1.jpg?width=1536&format=pjpg&auto=webp&s=d0a4f0e16f7f88af40e8985918e89b59530591b2');
+                }),
+
+            /*child: ListView(
               children: const [
                 ChatBubble(
                     alignment: Alignment.centerRight,
@@ -62,7 +74,7 @@ class ChatPage extends StatelessWidget {
                     imageURL:
                         'https://i.ytimg.com/vi/TK4I4RTOjQo/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AH-CYAC0AWKAgwIABABGGUgUShHMA8=&rs=AOn4CLBvm1oFR0lAueoAqsfCM9_j5yfWfQ')
               ],
-            ),
+            ), */
           ),
           ChatInput(),
         ],

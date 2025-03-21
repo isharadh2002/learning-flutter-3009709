@@ -24,6 +24,7 @@ class ChatApp extends StatelessWidget {
         ),
       ),
       home: const ChatPage(),
+      //home: const VehicleOwnerPage(ownerName: "Ishara Dhanushan", ownerEmail: "isharadh2002@gmail.com", vehicleModel: "Nissan Leaf", vehicleNumber: "CAM-7534", totalQuota: 50, initialRemainingQuota: 40),
     );
   }
 }
