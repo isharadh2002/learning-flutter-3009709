@@ -1,0 +1,2 @@
+C:/Users/Ishara/Documents/GitHub/learning-flutter-3009709/chat_app/android/app/.cxx/Debug/27696346/x86_64/CMakeFiles/edit_cache.dir
+C:/Users/Ishara/Documents/GitHub/learning-flutter-3009709/chat_app/android/app/.cxx/Debug/27696346/x86_64/CMakeFiles/rebuild_cache.dir
